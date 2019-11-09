@@ -1,4 +1,0 @@
-#Sat Nov 09 11:36:34 PST 2019
-base.0=C\:\\Users\\Nathaniel\\Documents\\Rhinogotchi\\Temp\\gradleOut\\build\\intermediates\\transforms\\dexMerger\\release\\0
-path.0=classes.dex
-renamed.0=classes.dex
