@@ -5,7 +5,13 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/HelloRhino.unity
     guid: e6a6fa04348cb45c9b0221eb19c946da
+  - enabled: 0
+    path: Assets/Scenes/RhinoActivitiesScene.unity
+    guid: 6008e653888c6224d9bf3af6a58d2bc2
+  - enabled: 1
+    path: Assets/Scenes/YourRhinosScene.unity
+    guid: 2a3ae580e8870894984aa732205cf03a
   m_configObjects: {}
