@@ -37,6 +37,10 @@ namespace GoogleARCore.Examples.HelloAR
 	/// </summary>
 	public class HelloRhinoController : MonoBehaviour
 	{
+
+		public float moveDuration;
+		public float rotationDuration;
+		private Coroutine _movementCoroutine;
 		/// <summary>
 		/// The first-person camera being used to render the passthrough camera image (i.e. AR
 		/// background).
@@ -58,6 +62,8 @@ namespace GoogleARCore.Examples.HelloAR
 		/// </summary>
 		public GameObject GameObjectPointPrefab;
 
+		public GameObject TreatPrefab;
+
 		/// <summary>
 		/// The rotation in degrees need to apply to prefab when it is placed.
 		/// </summary>
@@ -69,7 +75,8 @@ namespace GoogleARCore.Examples.HelloAR
 		/// </summary>
 		private bool m_IsQuitting = false;
 
-		public GameObject CreatedObject;
+		private GameObject _createdRhino;
+		private GameObject _createdTreat;
 
 		/// <summary>
 		/// The Unity Awake() method.
@@ -142,27 +149,47 @@ namespace GoogleARCore.Examples.HelloAR
 					}
 
 					// Instantiate prefab at the hit pose.
-					if (CreatedObject == null)
+					if (_createdRhino == null)
 					{
-						CreatedObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
+						_createdRhino = InstantiateAndAnchor(prefab, hit);
 					}
 					else
 					{
-						AnimateWalking();
+						if (_createdTreat == null)
+						{
+							_createdTreat = InstantiateAndAnchor(TreatPrefab, hit);
+						}
+						else
+						{
+							SetAnchor(_createdTreat, hit);
+						}
+						_createdTreat.SetActive(true); // we disable it if it's been eaten
+						//AnimateWalking(_createdObject, hit.Pose.position, hit.Pose.rotation);
+						AnimateWalking(_createdRhino, hit.Pose.position, hit.Pose.up);
 					}
-
-					// Compensate for the hitPose rotation facing away from the raycast (i.e.
-					// camera).
-					gameObject.transform.Rotate(0, k_PrefabRotation, 0, Space.Self);
-
-					// Create an anchor to allow ARCore to track the hitpoint as understanding of
-					// the physical world evolves.
-					var anchor = hit.Trackable.CreateAnchor(hit.Pose);
-
-					// Make game object a child of the anchor.
-					gameObject.transform.parent = anchor.transform;
 				}
 			}
+		}
+
+		private GameObject InstantiateAndAnchor(GameObject prefab, TrackableHit hit)
+		{
+			var newObject = Instantiate(prefab, hit.Pose.position, hit.Pose.rotation);
+
+			SetAnchor(newObject, hit);
+
+			return newObject;
+		}
+
+		private void SetAnchor(GameObject gameObject, TrackableHit hit)
+		{
+			gameObject.transform.position = hit.Pose.position;
+			gameObject.transform.rotation = hit.Pose.rotation;
+			// Compensate for the hitPose rotation facing away from the raycast (i.e.
+			// camera).
+			gameObject.transform.Rotate(0, k_PrefabRotation, 0, Space.Self);
+			var anchor = hit.Trackable.CreateAnchor(hit.Pose);
+			gameObject.transform.parent = anchor.transform;
+
 		}
 
 		/// <summary>
@@ -239,25 +266,69 @@ namespace GoogleARCore.Examples.HelloAR
 			}
 		}
 
-		private void AnimateWalking()
+		public void AnimateWalking(GameObject gameObject, Vector3 stopPosition, Vector3 up)
 		{
-			var animator = CreatedObject.GetComponent<Animator>();
-			if (animator != null)
+			StopMovingIfNeeded();
+			_movementCoroutine = StartCoroutine(AnimateWalkingCoroutine(gameObject, stopPosition, up));
+		}
+
+		public void StopMovingIfNeeded()
+		{
+			if (_movementCoroutine != null)
 			{
-				animator.SetInteger("animation", 1);
+				StopCoroutine(_movementCoroutine);
 			}
 		}
 
-		private IEnumerator LerpToPosition(Vector3 position, float t)
+		IEnumerator AnimateWalkingCoroutine(GameObject targetObject, Vector3 stopPosition, Vector3 up)
 		{
-			var elapsedTime = 0f;
-			var startingPos = transform.position;
-			while (elapsedTime < t)
+			var directionVec = stopPosition - targetObject.transform.position;
+			var stopRotation = Quaternion.LookRotation(directionVec, up);
+			Debug.Log("Starting Motion");
+			Debug.Log($"Nate Current Postion {targetObject.transform.position}, Current Rotation {targetObject.transform.rotation}");
+			Debug.Log($"Nate Target Postion {stopPosition}, Target Rotation {stopRotation}");
+			float t = 0.0f;
+			Vector3 startPos = targetObject.transform.position;
+			Quaternion startRot = targetObject.transform.rotation;
+			SetRhinoAnimationState(RhinoAnimationState.Jogging);
+			while (t < moveDuration)
 			{
-				transform.position = Vector3.Lerp(startingPos, position, (elapsedTime / t));
-				elapsedTime += Time.deltaTime;
-				yield return new WaitForEndOfFrame();
+				t += Time.deltaTime;
+				targetObject.transform.position = Vector3.Lerp(startPos, stopPosition, t / moveDuration);
+				if (t < rotationDuration)
+				{
+					targetObject.transform.rotation = Quaternion.Slerp(startRot, stopRotation, t / rotationDuration);
+				}
+
+				Debug.Log($"Moved to {targetObject.transform.position}");
+				yield return null;
 			}
+			targetObject.transform.position = stopPosition;
+			targetObject.transform.rotation = stopRotation;
+			SetRhinoAnimationState(RhinoAnimationState.Idle);
+		}
+
+		public void SetRhinoAnimationState(RhinoAnimationState state)
+		{
+			if (_createdRhino != null)
+			{
+				var animator = _createdRhino.GetComponent<Animator>();
+				animator.SetInteger("animation", (int)state);
+			}
+		}
+
+		public void HappyDance(float seconds)
+		{
+			StopMovingIfNeeded();
+			_movementCoroutine = StartCoroutine(HappyDanceCoroutine(seconds));
+
+		}
+
+		private IEnumerator HappyDanceCoroutine(float seconds)
+		{
+			SetRhinoAnimationState(RhinoAnimationState.Jumping);
+			yield return new WaitForSeconds(seconds);
+			SetRhinoAnimationState(RhinoAnimationState.Idle);
 		}
 	}
 }

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.37311992, g: 0.38074034, b: 0.35872713, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -235,6 +235,7 @@ GameObject:
   m_Component:
   - component: {fileID: 627916102}
   - component: {fileID: 627916103}
+  - component: {fileID: 627916104}
   m_Layer: 0
   m_Name: HelloRhino Controller
   m_TagString: Untagged
@@ -263,7 +264,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 627916101}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 26074b15f9c13404d858bfedb8b8c00c, type: 3}
   m_Name: 
@@ -274,6 +275,29 @@ MonoBehaviour:
   GameObjectHorizontalPlanePrefab: {fileID: 2955592908729169964, guid: ec63cb8213b44154bae0118722e0c42c,
     type: 3}
   GameObjectPointPrefab: {fileID: 2955592908729169964, guid: ec63cb8213b44154bae0118722e0c42c,
+    type: 3}
+--- !u!114 &627916104
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 627916101}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 959bceb6cac8a954fbe50e0e4b3fab6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  moveDuration: 10
+  rotationDuration: 1
+  FirstPersonCamera: {fileID: 896679035}
+  GameObjectVerticalPlanePrefab: {fileID: 2955592908729169964, guid: ec63cb8213b44154bae0118722e0c42c,
+    type: 3}
+  GameObjectHorizontalPlanePrefab: {fileID: 2955592908729169964, guid: ec63cb8213b44154bae0118722e0c42c,
+    type: 3}
+  GameObjectPointPrefab: {fileID: 2955592908729169964, guid: ec63cb8213b44154bae0118722e0c42c,
+    type: 3}
+  TreatPrefab: {fileID: 2354306405906009598, guid: ea37166b423120948b93cd78a171fcf6,
     type: 3}
 --- !u!1001 &688001843
 PrefabInstance:

@@ -9,7 +9,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 1073288915020544, guid: f20b311137cf5d44f91c3b64eb182358, type: 3}
       propertyPath: m_Name
-      value: Rhino
+      value: Rhino Variant
       objectReference: {fileID: 0}
     - target: {fileID: 4325672612723756, guid: f20b311137cf5d44f91c3b64eb182358, type: 3}
       propertyPath: m_LocalPosition.x
