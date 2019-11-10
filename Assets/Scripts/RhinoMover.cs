@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class RhinoMover : MonoBehaviour
 {
+	public GameObject rhino;
 	public Vector3 stopPosition;
 	private Coroutine _coroutine;
 

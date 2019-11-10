@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44043037, g: 0.4890232, b: 0.5691813, a: 1}
+  m_IndirectSpecularColor: {r: 0.440431, g: 0.4890241, b: 0.5691822, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -120,6 +120,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &95875403 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1073288915020544, guid: f20b311137cf5d44f91c3b64eb182358,
+    type: 3}
+  m_PrefabInstance: {fileID: 1357238194}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &113420081
 GameObject:
   m_ObjectHideFlags: 0
@@ -129,7 +135,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 113420082}
-  - component: {fileID: 113420084}
   - component: {fileID: 113420083}
   m_Layer: 0
   m_Name: RhinoMover
@@ -164,24 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73013cde5d1162849aa865159d6e02b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rhino: {fileID: 0}
-  targetPosition: {x: 0, y: 0, z: 0}
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &113420084
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 113420081}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 73013cde5d1162849aa865159d6e02b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  rhino: {fileID: 0}
-  targetPosition: {x: 0, y: 0, z: 0}
-  targetRotation: {x: 0, y: 0, z: 0, w: 0}
+  rhino: {fileID: 95875403}
+  stopPosition: {x: 10, y: 0, z: 234}
+  moveDuration: 10
 --- !u!1 &143301519
 GameObject:
   m_ObjectHideFlags: 0

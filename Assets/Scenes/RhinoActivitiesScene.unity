@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 0
+      value: 250
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -331,7 +331,7 @@ PrefabInstance:
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: AR2Scene
+      value: HelloRhino
       objectReference: {fileID: 0}
     - target: {fileID: 8609430194465944417, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -785,12 +785,12 @@ PrefabInstance:
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -800
+      value: -750
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 390
+      value: -390
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -810,7 +810,7 @@ PrefabInstance:
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchorMin.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -820,7 +820,7 @@ PrefabInstance:
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1282,7 +1282,7 @@ PrefabInstance:
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 550
+      value: 750
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1916,7 +1916,7 @@ PrefabInstance:
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -550
+      value: -250
       objectReference: {fileID: 0}
     - target: {fileID: 7309945126467494746, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -2051,7 +2051,7 @@ PrefabInstance:
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: AR2Scene
+      value: HelloRhino
       objectReference: {fileID: 0}
     - target: {fileID: 1243365079511439797, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
