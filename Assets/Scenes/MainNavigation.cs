@@ -9,7 +9,7 @@ public class MainNavigation : MonoBehaviour
 	{
 		SceneManager.LoadScene(sceneName);
 	}
-
+	
     // Start is called before the first frame update
     void Start()
     {

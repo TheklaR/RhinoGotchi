@@ -874,7 +874,7 @@ PrefabInstance:
     - target: {fileID: 947664883446802963, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_Name
-      value: NameButton
+      value: AboutButton
       objectReference: {fileID: 0}
     - target: {fileID: 947664883446802963, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1049,17 +1049,17 @@ PrefabInstance:
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 1270288307}
+      objectReference: {fileID: 1932588460}
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Log
+      value: GoToScene
       objectReference: {fileID: 0}
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1069,7 +1069,7 @@ PrefabInstance:
     - target: {fileID: 2856318183118972865, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
-      value: Name Stuff
+      value: DelilahInfoScene
       objectReference: {fileID: 0}
     - target: {fileID: 8609430194465944417, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1089,7 +1089,7 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 7
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1109,7 +1109,7 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_text
-      value: Delilah
+      value: About
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1233,6 +1233,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1932588459
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1932588461}
+  - component: {fileID: 1932588460}
+  m_Layer: 0
+  m_Name: NavigationController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1932588460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932588459}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d5217a191d7bad4bbf5f7470d1347cd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1932588461
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1932588459}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 1.3020021, y: 0.23774067, z: 0.8464087}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1991299293
 GameObject:
   m_ObjectHideFlags: 0
@@ -1288,7 +1331,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rhino Playground
+  m_text: Delilah's Playground
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
   m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
@@ -1358,7 +1401,7 @@ MonoBehaviour:
   m_margin: {x: 0, y: 0, z: 0, w: 0}
   m_textInfo:
     textComponent: {fileID: 1991299295}
-    characterCount: 16
+    characterCount: 20
     spriteCount: 0
     spaceCount: 1
     wordCount: 2
