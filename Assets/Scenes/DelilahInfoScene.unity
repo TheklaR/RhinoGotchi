@@ -242,9 +242,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5764706, b: 0.18039216, a: 1}
-  m_RaycastTarget: 1
+  m_Material: {fileID: 2100000, guid: 4c2ebddde76767340b9faa2c2165cdfe, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 2100000, guid: 1a4ee5032f2921641bf92a7628ce4c47, type: 2}
   m_Color: {r: 0.990566, g: 0.990566, b: 0.990566, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
@@ -685,8 +685,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 0.5764706, b: 0.18039216, a: 1}
+  m_Material: {fileID: 2100000, guid: 4c2ebddde76767340b9faa2c2165cdfe, type: 2}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -994,13 +994,13 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_fontColorGradientPreset
       value: 
-      objectReference: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+      objectReference: {fileID: 11400000, guid: bbb1c3cef131bfc49bf96a3700f391a3,
         type: 2}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1021,17 +1021,17 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1197,7 +1197,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 195571c45792db145b4dd113639e2c02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4141238a9f5d594b9601ccee3398700, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1371,7 +1371,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+  m_fontColorGradientPreset: {fileID: 11400000, guid: 6b783ec662117464cae2c646ceaac7d6,
     type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0

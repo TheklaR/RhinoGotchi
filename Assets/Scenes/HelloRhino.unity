@@ -880,13 +880,13 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.lineCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_fontColorGradientPreset
       value: 
-      objectReference: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+      objectReference: {fileID: 11400000, guid: bbb1c3cef131bfc49bf96a3700f391a3,
         type: 2}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -907,17 +907,17 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 0
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.wordCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.pageCount
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}

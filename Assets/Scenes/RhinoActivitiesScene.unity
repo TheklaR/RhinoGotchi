@@ -402,7 +402,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColorGradientPreset
       value: 
-      objectReference: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+      objectReference: {fileID: 11400000, guid: bbb1c3cef131bfc49bf96a3700f391a3,
         type: 2}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1001,7 +1001,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColorGradientPreset
       value: 
-      objectReference: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+      objectReference: {fileID: 11400000, guid: bbb1c3cef131bfc49bf96a3700f391a3,
         type: 2}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1022,7 +1022,7 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.characterCount
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1042,7 +1042,7 @@ PrefabInstance:
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
       propertyPath: m_textInfo.spaceCount
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 4c34aec5c179efa4c9cd76a8c36bff3b, type: 3}
@@ -1150,7 +1150,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 195571c45792db145b4dd113639e2c02, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b4141238a9f5d594b9601ccee3398700, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1473,7 +1473,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColorGradientPreset
       value: 
-      objectReference: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+      objectReference: {fileID: 11400000, guid: bbb1c3cef131bfc49bf96a3700f391a3,
         type: 2}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
@@ -1692,7 +1692,7 @@ MonoBehaviour:
     topRight: {r: 1, g: 1, b: 1, a: 1}
     bottomLeft: {r: 1, g: 1, b: 1, a: 1}
     bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+  m_fontColorGradientPreset: {fileID: 11400000, guid: 6b783ec662117464cae2c646ceaac7d6,
     type: 2}
   m_spriteAsset: {fileID: 0}
   m_tintAllSprites: 0
@@ -2127,7 +2127,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_fontColorGradientPreset
       value: 
-      objectReference: {fileID: 11400000, guid: 69a525efa7e6472eab268f6ea605f06e,
+      objectReference: {fileID: 11400000, guid: bbb1c3cef131bfc49bf96a3700f391a3,
         type: 2}
     - target: {fileID: 187936339911455949, guid: 4c34aec5c179efa4c9cd76a8c36bff3b,
         type: 3}
